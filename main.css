@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.way-layout {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.way-header {
+    background: rgba(0,0,0,0.74);
+}
+
+.greeting-block {
+    padding: 70px 20px 20px;
+    background: lightgray;
+}
+
+.way-left, .way-right {
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle; /*only for inline block*/
+    padding:10px;
+}
+
+.way-left {
+    text-align: center;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    color: white;
+}
+
+.way-left h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.way-left h1 span {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.way-left h2 {
+    font-size: 18px;
+}
+
+.way-left p {
+    font-size: 12px;
+}
+
+.greeting-img img {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+.header-content * {
+    display: inline-block;
+}
+
+.logo {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+.header-content nav {
+
+    text-align: right;
+    width: 80%;
+    vertical-align: middle;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+}
+
+.header-content nav ul li {
+    margin: 0 10px;
+}
+
+.header-content nav ul li:last-child {
+    margin-right: 0;
+}
+
+.we-do {
+    padding: 20px 0;
+}
+
+.we-do ul li {
+    width: calc(33% - 10px);
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+.icon-wrapper {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: orange;
+    text-align: center;
+}
+
+.icon-wrapper i {
+    font-size: 25px;
+    position: relative;
+    line-height: 70px;
+    /*top: 50%;
+    margin-top: -25px;*/
+    /*line-height: 3;*/
+}
+
+.we-do p {
+    display: inline-block;
+}
+отступы в em rem
