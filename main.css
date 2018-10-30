@@ -2,73 +2,21 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    position: relative;
 }
 
 ul {
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
 }
 
-.way-layout {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.way-header {
-    background: rgba(0,0,0,0.74);
-}
-
-.greeting-block {
-    padding: 70px 20px 20px;
-    background: lightgray;
-}
-
-.way-left, .way-right {
-    width: 49%;
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: middle; /*only for inline block*/
-    padding:10px;
-}
-
-.way-left {
-    text-align: center;
-    /*top: 50%;
-    transform: translateY(-50%);*/
-    color: white;
-}
-
-.way-left h1 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.way-left h1 span {
-    display: block;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.way-left h2 {
-    font-size: 18px;
-}
-
-.way-left p {
-    font-size: 12px;
-}
-
-.greeting-img img {
-    width: 100%;
-    height: auto;
-}
-
 .header-content {
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 20;
+    padding-left: 19%;
+    padding-right: 19%;
+    background-color: black;
+    box-sizing: border-box;
 }
 
 .header-content * {
@@ -78,42 +26,129 @@ ul {
 .logo {
     font-size: 36px;
     vertical-align: middle;
+    text-transform: uppercase;
+    color: white;
+    width: 50%;
+}
+
+.bold-logo {
+    font-weight: bold;
+}
+
+.bold-logo::after {
+    content: ".";
+    color: red;
 }
 
 .header-content nav {
-
     text-align: right;
-    width: 80%;
+    width: 50%;
     vertical-align: middle;
     /*top: 50%;
     transform: translateY(-50%);*/
-}
-
-.header-content nav ul li {
-    margin: 0 10px;
 }
 
 .header-content nav ul li:last-child {
     margin-right: 0;
 }
 
+.nav-ref {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.way-layout {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.greeting-block {
+    padding: 70px 20px 20px;
+    background-image: url("images/greeting-background.jpg");
+}
+
+.way-left, .way-right {
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle; /*only for inline block*/
+}
+
+.way-left {
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    color: white;
+    text-transform: uppercase;
+}
+
+.way-left h1 {
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.way-left h1 span {
+    display: block;
+    font-weight: 300;
+}
+
+.way-left h2 {
+    font-size: 18px;
+}
+
+.way-left p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.way-right {
+    position: absolute;
+    top: 85px;
+}
+
+.greeting-img img {
+    width: 100%;
+    height: auto;
+}
+
 .we-do {
     padding: 20px 0;
+}
+
+.we-do h2 {
+    text-transform: uppercase;
+    word-spacing: -3px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+}
+
+.we-do h2::after {
+    content: ".";
+    color: red;
 }
 
 .we-do ul li {
     width: calc(33% - 10px);
     display: inline-block;
     box-sizing: border-box;
+    margin-bottom: 15px;
+}
 
+.we-do p {
+    display: inline-block;
+    margin-top: 0;/* em/rem*/
+    font-size: 13px;
+    position: relative;
 }
 
 .icon-wrapper {
     display: inline-block;
     width: 70px;
-    height: 70px;
-    background: orange;
+    height: 110px;
+    background: #ff2d00;
     text-align: center;
+    margin-right: 10px;
 }
 
 .icon-wrapper i {
@@ -125,7 +160,21 @@ ul {
     /*line-height: 3;*/
 }
 
-.we-do p {
-    display: inline-block;
+.normal-weight {
+    font-weight: normal;
 }
-отступы в em rem
+
+.description {
+    width: 52%;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+}
+
+.description p {
+    font-weight: bold;
+}
+
+.description span {
+    font-size: 13px;
+}
