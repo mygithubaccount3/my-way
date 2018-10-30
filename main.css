@@ -5,7 +5,7 @@ body {
 }
 
 ul {
-    margin-top: 25px;
+    margin-top: 5%;
     padding: 0;
 }
 
@@ -85,16 +85,28 @@ ul {
 
 .way-left h1 {
     font-size: 300%;
-    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: -5px;
 }
 
-.way-left h1 span {
-    display: block;
-    font-weight: 300;
+.way-left span {
+    font-size: 300%;
+}
+
+.way-left h1::after {
+    content: ".";
+    color: red;
+    margin-left: -0.5%;
 }
 
 .way-left h2 {
     font-size: 18px;
+    letter-spacing: -2px;
+}
+
+.way-left h2 span {
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .way-left p {
@@ -104,7 +116,7 @@ ul {
 
 .way-right {
     position: absolute;
-    top: 85px;
+    top: 25%;
 }
 
 .greeting-img img {
@@ -113,12 +125,12 @@ ul {
 }
 
 .we-do {
-    padding: 20px 0;
+    padding: 1.7% 0;
 }
 
 .we-do h2 {
     text-transform: uppercase;
-    word-spacing: -3px;
+    word-spacing: -25%;
     margin-bottom: 0;
     letter-spacing: -1px;
 }
@@ -132,29 +144,25 @@ ul {
     width: calc(33% - 10px);
     display: inline-block;
     box-sizing: border-box;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
 }
 
 .we-do p {
-    display: inline-block;
     margin-top: 0;/* em/rem*/
     font-size: 13px;
-    position: relative;
 }
 
 .icon-wrapper {
     display: inline-block;
-    width: 70px;
-    height: 110px;
+    width: 28%;
     background: #ff2d00;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 4%;
 }
 
 .icon-wrapper i {
     font-size: 25px;
-    position: relative;
-    line-height: 70px;
+    line-height: 450%;
     /*top: 50%;
     margin-top: -25px;*/
     /*line-height: 3;*/
@@ -165,7 +173,7 @@ ul {
 }
 
 .description {
-    width: 52%;
+    width: 68%;
     display: inline-block;
     position: relative;
     top: 30px;
